@@ -1,52 +1,103 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Georgia', serif;
     margin: 0;
     padding: 0;
-    background: url('https://img.freepik.com/foto-gratis/cerca-pared-textura-marmol-blanco_53876-139849.jpg?size=626&ext=jpg') no-repeat center center fixed;
-    background-size: cover;
+    text-align: justify;
 }
 
 header {
-    background-color: #333;
     color: white;
     text-align: center;
     padding: 20px;
     position: relative;
 }
 
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 #logo {
     width: 80px;
     height: 80px;
-    position: absolute;
-    top: 5px;
-    left: 20px;
-    border-radius: 50%;
+    border-radius: 0;
+}
+
+#meta-smile {
+    font-size: 32px;
+    color: #000000;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 h1 {
     margin-bottom: 10px;
-    font-size: 24px;
+    font-size: 48px;
+    color: #000000;
 }
 
-#content {
+.subtitle {
+    font-size: 32px;
+    color: #000000;
+}
+
+.sub-subtitle {
+    font-size: 25px;
+}
+
+#video-container {
     text-align: center;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 15px;
-    margin: 20px;
+    margin-top: 20px;   
+    position: relative;
+}
+
+#video {
+    width: 1000px;
+    height: 600px;  
+    display: block;
+    margin: 0 auto;
+}
+
+.video-warning {
+    background-color: rgba(255, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    position: absolute;
+    top: 1;
+    left: 0;
+    right: 0;
+    animation: fadeIn 1s ease-out;
+    max-width: 100%;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 #cta-button {
     display: inline-block;
     padding: 10px 20px;
-    font-size: 20px;
+    font-size: 24px;
     text-decoration: none;
     color: white;
     background-color: #FFAE6A;
-    border-radius: 30px;
     margin-top: 20px;
     box-shadow: 0px 0px 15px rgba(255, 174, 106, 0.7);
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    border-radius: 0;
+    animation: fadeIn 1s ease-out; 
 }
 
 #cta-button:hover {
@@ -54,18 +105,31 @@ h1 {
     box-shadow: 0px 0px 20px rgba(255, 174, 106, 0.9);
 }
 
-#strategy {
-    background-color: rgba(255, 255, 255, 0.9);
+#content {
+    text-align: center;
     padding: 20px;
-    margin-top: 20px;
-    margin-bottom: 100px;
-    border-radius: 15px;
+    margin: 20px;
+}
+
+.content-box {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.content-box:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 .subtitle {
-    font-size: 24px;
+    font-size: 36px;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    color: #000000;
 }
 
 ul {
@@ -74,60 +138,66 @@ ul {
 }
 
 li {
+    font-size: 22px; 
     margin-bottom: 10px;
+}
+
+#cta-button-bottom {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+    background-color: #FFAE6A;
+    margin-top: 20px;
+    box-shadow: 0px 0px 15px rgba(255, 174, 106, 0.7);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    border-radius: 0;
+    animation: fadeIn 1s ease-out; 
+}
+
+#cta-button-bottom:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 0px 20px rgba(255, 174, 106, 0.9);
 }
 
 footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    padding: 20px;
 }
-
-#video-container {
-    text-align: center;
-    margin-top: 20px;
-}
-
-#video {
-    width: 900px;
-    height: 450px;
-    display: block;
-    margin: 0 auto; 
-    max-width: 100%;
-}
-
 
 @media screen and (max-width: 768px) {
     h1 {
-        font-size: 20px;
-    }
-
-    #cta-button {
-        font-size: 18px;
-        padding: 8px 15px;
+        font-size: 36px;
     }
 
     .subtitle {
-        font-size: 20px;
+        font-size: 28px;
     }
 
-    #video-container {
-        margin-top: 10px; 
-    }
-
-    #logo {
-        width: 60px; 
-        height: 60px;
+    #video {
+        width: 100%;
     }
 }
 
 @media screen and (max-width: 670px) {
+
     #logo {
-        position: static; 
-        margin-bottom: 10px; 
+        width: 60px;
+        height: 60px;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .subtitle {
+        font-size: 20px;
     }
 }

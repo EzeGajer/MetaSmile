@@ -12,7 +12,6 @@ body {
 header {
     color: white;
     text-align: center;
-    padding: 0px 20px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -60,13 +59,14 @@ h1 {
 }
 
 #video-container {
+    width: 1000px;
     margin-top: 35px;
     text-align: center;
     position: relative;
 }
 
 #video {
-    width: 1000px;
+    width: 100%;
     height: 600px;  
     display: block;
     margin: 0 auto;
@@ -182,6 +182,10 @@ footer {
     .video-warning{
         width: 100%;
     }
+
+    #video-container{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -203,10 +207,6 @@ footer {
     #logo {
         width: 60px;
         height: 60px;
-    }
-
-    header {
-        padding: 10px;
     }
 
     h1 {

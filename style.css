@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 body {
     font-family: 'Georgia', serif;
     margin: 0;
@@ -32,26 +34,23 @@ header {
 }
 
 #logo {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     border-radius: 0;
+    margin-left: -15px;
 }
 
 #meta-smile {
-    font-size: 32px;
+    font-size: 22px;
     color: #000000;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Lobster', cursive;
 }
 
 h1 {
     margin-bottom: 10px;
     font-size: 48px;
     color: #000000;
-}
-
-.subtitle {
-    font-size: 32px;
-    color: #000000;
+    margin-top: -25px;
 }
 
 .sub-subtitle {
@@ -136,7 +135,6 @@ h1 {
 
 .subtitle {
     font-size: 36px;
-    font-weight: bold;
     margin-bottom: 20px;
     color: #000000;
 }
@@ -216,4 +214,12 @@ footer {
     .subtitle {
         font-size: 20px;
     }
+}
+
+h1 span.underline {
+    text-decoration: underline;
+}
+
+.sub-subtitle span.underline {
+    text-decoration: underline;
 }

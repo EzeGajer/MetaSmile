@@ -221,7 +221,7 @@ li {
 }
 
 .youtube {
-    background-color: #FF0000;
+    background-color: #ffffff;
 }
 
 .tiktok {
@@ -279,6 +279,6 @@ h1 span.underline {
     text-decoration: underline;
 }
 
-.sub-subtitle span.underline {
+.subtitle span.underline {
     text-decoration: underline;
 }
